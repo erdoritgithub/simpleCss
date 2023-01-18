@@ -36,8 +36,9 @@ $(document).ready(function(){
         let value = $(this).attr('css').split(" ");
     
         value =value.filter(w =>  w.includes("w-")).toString().split('-')[1];
+        let newValue= value.replace('pr', "%")
         
-        $(this).css('width', ''+value+'')
+        addCSSRule(document.styleSheets[0], "w-"+value+"", "background: "+newValue+"");
     });
 
     // __height__
