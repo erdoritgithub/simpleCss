@@ -27,7 +27,6 @@ $(document).ready(function(){
     }
     
     // Use it!
-    // addCSSRule(document.styleSheets[0], "body", "background: black");
 
     // _______sizing__________
    
